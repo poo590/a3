@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY = "kiara123"   // Your DockerHub username
+        REGISTRY = "poo590"   // Your DockerHub username
         IMAGE_NAME = "myapp"
     }
 
@@ -10,8 +10,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Kiaraintellipaat/dd.git'
+                git branch: 'develop',
+                    url: 'https://github.com/poo590/a3.git'
             }
         }
 
